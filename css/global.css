@@ -67,3 +67,7 @@ body {
 .scroll-container img {
   padding: 10px;
 }
+
+.scrollIMG {
+  width: 300px;
+}

@@ -3,10 +3,34 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.row, .column33, .column66, .column {
+  box-sizing: border-box;
+}
+
 .content {
   margin: auto;
   width: 900px;
   background-color: aliceblue;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column33 {
+  flex: 33%;
+  padding: 20px;
+}
+
+.column66 {
+  flex: 66%;
+  padding: 20px;
+}
+
+.column {
+  flex: 25%;
+  padding: 20px;
 }
 
 /* MEDIUM */
@@ -17,7 +41,7 @@ body {
   }
 
   .column {
-    width: 50%;
+    flex: 50%;
   }
 }
 
@@ -28,19 +52,18 @@ body {
     background-color: red;
   }
 
-  .column {
-    width: 100%;
+  .row {
+    flex-direction: column;
   }
 }
 
-
-
-.column33 {
-  float: left;
-  width: 33%;
+.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
 }
 
-.column66 {
-  float: left;
-  width: 33%;
+.scroll-container img {
+  padding: 10px;
 }

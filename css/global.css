@@ -1,11 +1,46 @@
 body {
-  background-color: powderblue;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  color: blue;
+.content {
+  margin: auto;
+  width: 900px;
+  background-color: aliceblue;
 }
 
-p {
-  color: red;
+/* MEDIUM */
+@media screen and (max-width: 900px) {
+  .content {
+    width: 80%;
+    background-color: orange;
+  }
+
+  .column {
+    width: 50%;
+  }
+}
+
+/* SMALL */
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    background-color: red;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+.column33 {
+  float: left;
+  width: 33%;
+}
+
+.column66 {
+  float: left;
+  width: 33%;
 }

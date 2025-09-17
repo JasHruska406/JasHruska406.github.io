@@ -77,6 +77,8 @@ body {
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .scroll-container img {

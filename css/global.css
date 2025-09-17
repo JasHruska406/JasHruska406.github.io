@@ -36,7 +36,7 @@ body {
 /* MEDIUM */
 @media screen and (max-width: 900px) {
   .content {
-    width: 80%;
+    width: 100%;
     background-color: orange;
   }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .scroll-container {
-  background-color: #333;
+  background-color: #d6d6d6;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;

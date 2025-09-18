@@ -31,17 +31,17 @@ body {
 
 .column33 {
   flex: 33%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .column66 {
   flex: 66%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .column {
   flex: 25%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .zoom {
@@ -62,6 +62,11 @@ input[type=checkbox]:checked ~ label > img {
   transition: width .2s;
   width: 500px;
   cursor: zoom-out;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 
@@ -106,6 +111,11 @@ input[type=checkbox]:checked ~ label > img {
 
   input[type=checkbox]:checked ~ label > img {
     width: 300px;
+  }
+
+  iframe {
+    width: 300px;
+    aspect-ratio: 16 / 9;
   }
 }
 

@@ -44,6 +44,27 @@ body {
   padding: 20px;
 }
 
+.zoom {
+  display: inline;
+}
+
+.zoom img{
+  transition: width .2s;
+  width: 300px;
+  cursor: zoom-in;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transition: width .2s;
+  width: 500px;
+  cursor: zoom-out;
+}
+
+
 /* MEDIUM */
 @media screen and (max-width: 900px) {
   .content {
@@ -58,6 +79,14 @@ body {
   .column {
     flex: 50%;
   }
+
+  .zoom img{
+    width: 200px;
+  }
+
+  input[type=checkbox]:checked ~ label > img {
+    width: 400px;
+  }
 }
 
 /* SMALL */
@@ -69,6 +98,14 @@ body {
 
   .row {
     flex-direction: column;
+  }
+
+  .zoom img{
+    width: 100px;
+  }
+
+  input[type=checkbox]:checked ~ label > img {
+    width: 300px;
   }
 }
 
@@ -110,24 +147,4 @@ body {
 
 h4 {
   margin: 0;
-}
-
-.zoom {
-  display: inline;
-}
-
-.zoom img{
-  transition: width .2s;
-  width: 300px;
-  cursor: zoom-in;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox]:checked ~ label > img {
-  transition: width .2s;
-  width: 500px;
-  cursor: zoom-out;
 }
